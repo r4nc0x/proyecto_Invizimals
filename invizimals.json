@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Beatwidow",
+        "type": "Fuego / PUP / 001",
+        "image": "FUEGO_ARTES/01/frontal.png",
+        "image2": "FUEGO_ARTES/01/personaje.png",
+        "arImage": "FUEGO_ARTES/01/ar.png",
+        "description": "¿Una araña bailarina? ¡El mundo de Invizimals nunca deja de sorprender! Te presento a Beatwidow, la reina de la pista de baile. Puede moverse al ritmo del breakdance… ¡o de cualquier estilo que se te ocurra! Esta criatura es tan espectacular que incluso tiene una bola de discoteca incrustada en su estómago. Pero cuidado… esa bola no solo ilumina la fiesta, ¡quizás también pueda usarse de maneras mucho más… PELIGROSAS!",
+        "stat": "285 / 150"
+    },
+    {
+        "id": 1,
+        "name": "Beatwidow",
+        "type": "Fuego / COLT / 002",
+        "image": "FUEGO_ARTES/02/frontal.png",
+        "image2": "FUEGO_ARTES/02/personaje.png",
+        "arImage": "FUEGO_ARTES/02/ar.png",
+        "description": "¿Una araña bailarina? El mundo invizimals está lleno de sorpresas! Te presento a Beatwidow, la reina de la discoteca, que puede bailar break, o lo que quieras, esta criatura es tan buena bailarina que incluso le ha salido una bola de discoteca en el estómago, por cierto vigila esta bola.. Quizás pueda usarla de formas más.. PELIGROSAS",
+        "stat": "250 / 300"
+    },
+    {
+        "id": 1,
+        "name": "Beatwidow",
+        "type": "Fuego / MAX / 002",
+        "image": "FUEGO_ARTES/03/frontal.png",
+        "image2": "FUEGO_ARTES/03/personaje.png",
+        "arImage": "FUEGO_ARTES/03/ar.png",
+        "description": "¿Una araña bailarina? El mundo invizimals está lleno de sorpresas! Te presento a Beatwidow, la reina de la discoteca, que puede bailar break, o lo que quieras, esta criatura es tan buena bailarina que incluso le ha salido una bola de discoteca en el estómago, por cierto vigila esta bola.. Quizás pueda usarla de formas más.. PELIGROSAS",
+        "stat": "600 / 500"
+    }
+]
