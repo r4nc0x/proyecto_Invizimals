@@ -22,11 +22,73 @@
     {
         "id": 1,
         "name": "Beatwidow",
-        "type": "Fuego / MAX / 002",
+        "type": "Fuego / MAX / 003",
         "image": "FUEGO_ARTES/03/frontal.png",
         "image2": "FUEGO_ARTES/03/personaje.png",
         "arImage": "FUEGO_ARTES/03/ar.png",
         "description": "¿Una araña bailarina? El mundo invizimals está lleno de sorpresas! Te presento a Beatwidow, la reina de la discoteca, que puede bailar break, o lo que quieras, esta criatura es tan buena bailarina que incluso le ha salido una bola de discoteca en el estómago, por cierto vigila esta bola.. Quizás pueda usarla de formas más.. PELIGROSAS",
         "stat": "600 / 500"
+    },
+    {
+        "id": 1,
+        "name": "Firecracker",
+        "type": "Fuego / PUP / 004",
+        "image": "FUEGO_ARTES/04/frontal.png",
+        "image2": "FUEGO_ARTES/04/personaje.png",
+        "arImage": "FUEGO_ARTES/04/ar.png",
+        "description": "Los Firecrackers aparecen mencionados en pergaminos antiguos de hace más de setecientos años. Estas poderosas criaturas de fuego y ceniza habitan en las profundidades de los volcanes, como el Monte Vesubio. Dawson y Kenichi los descubrieron durante su primera aventura, y desde entonces, Dawson siempre lleva uno de ellos como mascota.",
+        "stat": "200 / 300"
+    },
+    {
+        "id": 1,
+        "name": "Firecracker",
+        "type": "Fuego / COLT / 005",
+        "image": "FUEGO_ARTES/05/frontal.png",
+        "image2": "FUEGO_ARTES/05/personaje.png",
+        "arImage": "FUEGO_ARTES/05/ar.png",
+        "description": "Los Firecrackers aparecen mencionados en pergaminos antiguos de hace más de setecientos años. Estas poderosas criaturas de fuego y ceniza habitan en las profundidades de los volcanes, como el Monte Vesubio. Dawson y Kenichi los descubrieron durante su primera aventura, y desde entonces, Dawson siempre lleva uno de ellos como mascota.",
+        "stat": "400 / 500"
+    },
+    {
+        "id": 1,
+        "name": "Firecracker",
+        "type": "Fuego / MAX / 006",
+        "image": "FUEGO_ARTES/06/frontal.png",
+        "image2": "FUEGO_ARTES/06/personaje.png",
+        "arImage": "FUEGO_ARTES/06/ar.png",
+        "description": "Los Firecrackers aparecen mencionados en pergaminos antiguos de hace más de setecientos años. Estas poderosas criaturas de fuego y ceniza habitan en las profundidades de los volcanes, como el Monte Vesubio. Dawson y Kenichi los descubrieron durante su primera aventura, y desde entonces, Dawson siempre lleva uno de ellos como mascota.",
+        "stat": "650 / 750"
+    },
+    {
+        "id": 1,
+        "name": "Flameclaw",
+        "type": "Fuego / PUP / 007",
+        "image": "FUEGO_ARTES/07/frontal.png",
+        "image2": "FUEGO_ARTES/07/personaje.png",
+        "arImage": "FUEGO_ARTES/07/ar.png",
+        "description": "En lo más profundo del desierto egipcio, en un clima tan cálido que hace que su cuerpo arda, vive el Flameclaw. Una extraña criatura parecida a un escorpión, el Flameclaw combina el veneno con el fuego en un cóctel letal, aderezado con una personalidad arrogante. Esta criatura es el rey del desierto y es famoso por comportarse como tal.",
+        "stat": "300 / 350"
+    }
+    ,
+    {
+        "id": 1,
+        "name": "Flameclaw",
+        "type": "Fuego / COLT / 008",
+        "image": "FUEGO_ARTES/08/frontal.png",
+        "image2": "FUEGO_ARTES/08/personaje.png",
+        "arImage": "FUEGO_ARTES/08/ar.png",
+        "description": "En lo más profundo del desierto egipcio, en un clima tan cálido que hace que su cuerpo arda, vive el Flameclaw. Una extraña criatura parecida a un escorpión, el Flameclaw combina el veneno con el fuego en un cóctel letal, aderezado con una personalidad arrogante. Esta criatura es el rey del desierto y es famoso por comportarse como tal.",
+        "stat": "550 / 450"
+    }
+    ,
+    {
+        "id": 1,
+        "name": "Flameclaw",
+        "type": "Fuego / MAX / 009",
+        "image": "FUEGO_ARTES/09/frontal.png",
+        "image2": "FUEGO_ARTES/09/personaje.png",
+        "arImage": "FUEGO_ARTES/09/ar.png",
+        "description": "En lo más profundo del desierto egipcio, en un clima tan cálido que hace que su cuerpo arda, vive el Flameclaw. Una extraña criatura parecida a un escorpión, el Flameclaw combina el veneno con el fuego en un cóctel letal, aderezado con una personalidad arrogante. Esta criatura es el rey del desierto y es famoso por comportarse como tal.",
+        "stat": "750 / 500"
     }
 ]
