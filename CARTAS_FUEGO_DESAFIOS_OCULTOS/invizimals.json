@@ -102,35 +102,13 @@
     },
     {
         "id": 1,
-        "name": "Fossilizaur",
-        "type": "Fuego / PUP / 010",
-        "image": "FUEGO_ARTES/10/frontal.png",
-        "image2": "FUEGO_ARTES/10/personaje.png",
-        "arImage": "FUEGO_ARTES/10/ar.png",
-        "description": "Algunas criaturas pueden cambiar el color de su piel a voluntad; camaleones, algunos lagartos y Fossilizaur, el Invizimal que vive en cuevas. Cambiar de color se ha convertido en una estrategia de supervivencia: puede disfrazarse, esperar pacientemente y atrapar a su presa por sorpresa. Pero en las cuevas oscuras no pasan muchas cosas, así que a veces Fossilizaur tiene que esperar. Y esperar.",
-        "stat": "300 / 300",
-        "habitat": "Fuego"
-    },
-    {
-        "id": 1,
-        "name": "Fossilizaur",
-        "type": "Fuego / COLT / 011",
-        "image": "FUEGO_ARTES/11/frontal.png",
-        "image2": "FUEGO_ARTES/11/personaje.png",
-        "arImage": "FUEGO_ARTES/11/ar.png",
-        "description": "Algunas criaturas pueden cambiar el color de su piel a voluntad; camaleones, algunos lagartos y Fossilizaur, el Invizimal que vive en cuevas. Cambiar de color se ha convertido en una estrategia de supervivencia: puede disfrazarse, esperar pacientemente y atrapar a su presa por sorpresa. Pero en las cuevas oscuras no pasan muchas cosas, así que a veces Fossilizaur tiene que esperar. Y esperar.",
-        "stat": "250 / 250",
-        "habitat": "Fuego"
-    },
-    {
-        "id": 1,
-        "name": "Fossilizaur",
-        "type": "Fuego / MAX / 012",
-        "image": "FUEGO_ARTES/12/frontal.png",
-        "image2": "FUEGO_ARTES/12/personaje.png",
-        "arImage": "FUEGO_ARTES/12/ar.png",
-        "description": "Algunas criaturas pueden cambiar el color de su piel a voluntad; camaleones, algunos lagartos y Fossilizaur, el Invizimal que vive en cuevas. Cambiar de color se ha convertido en una estrategia de supervivencia: puede disfrazarse, esperar pacientemente y atrapar a su presa por sorpresa. Pero en las cuevas oscuras no pasan muchas cosas, así que a veces Fossilizaur tiene que esperar. Y esperar.",
-        "stat": "650 / 650",
+        "name": "Fl",
+        "type": "Fuego / MAX / 009",
+        "image": "FUEGO_ARTES/09/frontal.png",
+        "image2": "FUEGO_ARTES/09/personaje.png",
+        "arImage": "FUEGO_ARTES/09/ar.png",
+        "description": "En lo más profundo del desierto egipcio, en un clima tan cálido que hace que su cuerpo arda, vive el Flameclaw. Una extraña criatura parecida a un escorpión, el Flameclaw combina el veneno con el fuego en un cóctel letal, aderezado con una personalidad arrogante. Esta criatura es el rey del desierto y es famoso por comportarse como tal.",
+        "stat": "750 / 500",
         "habitat": "Fuego"
     }
 ]

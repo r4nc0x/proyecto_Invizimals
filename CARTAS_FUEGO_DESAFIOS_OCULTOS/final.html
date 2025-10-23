@@ -29,7 +29,6 @@ header {
     text-align: center;
     margin-bottom: 20px;
     padding: 20px;
-    position: relative;
 }
 h1 {
     font-size: 3rem;
@@ -81,12 +80,11 @@ h1 {
     pointer-events: none;
 }
 
-/* PANELES PARA PC - ARRIBA */
 .search-panel {
     position: absolute;
-    top: 100%;
-    right: 0;
-    transform: translateY(10px);
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
     background: rgba(45, 48, 71, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -97,13 +95,12 @@ h1 {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 99;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
 }
 
 .search-panel.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .search-panel input {
@@ -123,9 +120,9 @@ h1 {
 
 .filter-panel {
     position: absolute;
-    top: 100%;
-    left: 0;
-    transform: translateY(10px);
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
     background: rgba(45, 48, 71, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 15px;
@@ -138,13 +135,12 @@ h1 {
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 99;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    margin-top: 10px;
 }
 
 .filter-panel.active {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
 
 .filter-option {
@@ -380,11 +376,9 @@ h1 {
         bottom: 90px;
         right: 20px;
         left: auto;
-        top: auto;
         transform: translateX(400px);
         width: calc(100% - 40px);
         max-width: 300px;
-        margin-top: 0;
     }
 
     .search-panel.active {
@@ -396,11 +390,9 @@ h1 {
         bottom: 90px;
         left: 20px;
         right: auto;
-        top: auto;
         transform: translateY(500px);
         width: calc(100% - 40px);
         max-width: 300px;
-        margin-top: 0;
     }
 
     .filter-panel.active {
@@ -417,26 +409,23 @@ h1 {
         
         <!-- Controles de búsqueda y filtro con imágenes locales -->
         <div class="search-filter-container">
-            <div class="filter-btn-container">
-                <div class="filter-btn" id="filterBtn">
-                    <img src="RECURSOS/montana.png" alt="Filtrar" class="icon-btn">
-                </div>
-                <div class="filter-panel" id="filterPanel">
-                    <div class="filter-title">Filtrar por hábitat</div>
-                    <!-- Las opciones de filtro se generarán dinámicamente -->
-                </div>
+            <div class="filter-btn" id="filterBtn">
+                <img src="RECURSOS/montana.png" alt="Filtrar" class="icon-btn">
             </div>
-            
-            <div class="search-btn-container">
-                <div class="search-btn" id="searchBtn">
-                    <img src="RECURSOS/lupa.png" alt="Buscar" class="icon-btn">
-                </div>
-                <div class="search-panel" id="searchPanel">
-                    <input type="text" id="searchInput" placeholder="Buscar por nombre...">
-                </div>
+            <div class="search-btn" id="searchBtn">
+                <img src="RECURSOS/lupa.png" alt="Buscar" class="icon-btn">
             </div>
         </div>
     </header>
+    
+    <div class="search-panel" id="searchPanel">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre...">
+    </div>
+    
+    <div class="filter-panel" id="filterPanel">
+        <div class="filter-title">Filtrar por hábitat</div>
+        <!-- Las opciones de filtro se generarán dinámicamente -->
+    </div>
 
     <div class="invizimals-grid">
         <!-- Cartas se crean desde JSON -->
@@ -580,49 +569,27 @@ function applyFilters() {
 }
 
 // Event listeners para controles de búsqueda y filtro
-searchBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
+searchBtn.addEventListener('click', () => {
     searchPanel.classList.toggle('active');
     if (filterPanel.classList.contains('active')) {
         filterPanel.classList.remove('active');
     }
 });
-
-filterBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
+filterBtn.addEventListener('click', () => {
     filterPanel.classList.toggle('active');
     if (searchPanel.classList.contains('active')) {
         searchPanel.classList.remove('active');
     }
 });
-
 searchInput.addEventListener('input', applyFilters);
-
-// Cerrar paneles al hacer clic fuera - SOLO para PC
-function handleClickOutside(e) {
-    // Solo aplicar en PC (ancho mayor a 768px)
-    if (window.innerWidth > 768) {
-        const isSearchPanel = searchPanel.contains(e.target);
-        const isSearchBtn = searchBtn.contains(e.target);
-        const isFilterPanel = filterPanel.contains(e.target);
-        const isFilterBtn = filterBtn.contains(e.target);
-        
-        if (!isSearchPanel && !isSearchBtn) {
-            searchPanel.classList.remove('active');
-        }
-        if (!isFilterPanel && !isFilterBtn) {
-            filterPanel.classList.remove('active');
-        }
+document.addEventListener('click', (e) => {
+    if (!searchPanel.contains(e.target) && !searchBtn.contains(e.target)) {
+        searchPanel.classList.remove('active');
     }
-}
-
-document.addEventListener('click', handleClickOutside);
-
-// Prevenir que el input cierre el panel
-searchInput.addEventListener('click', (e) => {
-    e.stopPropagation();
+    if (!filterPanel.contains(e.target) && !filterBtn.contains(e.target)) {
+        filterPanel.classList.remove('active');
+    }
 });
-
 closeModal.addEventListener('click', () => cardModal.style.display = 'none');
 cardModal.addEventListener('click', e => {
     if (e.target === cardModal) cardModal.style.display = 'none';
