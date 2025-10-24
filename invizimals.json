@@ -132,5 +132,71 @@
         "description": "Algunas criaturas pueden cambiar el color de su piel a voluntad; camaleones, algunos lagartos y Fossilizaur, el Invizimal que vive en cuevas. Cambiar de color se ha convertido en una estrategia de supervivencia: puede disfrazarse, esperar pacientemente y atrapar a su presa por sorpresa. Pero en las cuevas oscuras no pasan muchas cosas, así que a veces Fossilizaur tiene que esperar. Y esperar.",
         "stat": "650 / 650",
         "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Griffonator",
+        "type": "Fuego / PUP / 013",
+        "image": "FUEGO_ARTES/13/frontal.png",
+        "image2": "FUEGO_ARTES/13/personaje.png",
+        "arImage": "FUEGO_ARTES/13/ar.png",
+        "description": "Los Griffonators son reptiles acechadores que vagan por las orillas de los ríos de la India. Rápidos y ruidosos, tienen la habilidad especial de volar cortas distancias usando sus pequeñas alas, de modo que pueden volar sobre su presa y, en silencio, atacarla desde arriba con un golpe letal.",
+        "stat": "300 / 300",
+        "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Griffonator",
+        "type": "Fuego / COLT / 014",
+        "image": "FUEGO_ARTES/14/frontal.png",
+        "image2": "FUEGO_ARTES/14/personaje.png",
+        "arImage": "FUEGO_ARTES/14/ar.png",
+        "description": "Los Griffonators son reptiles acechadores que vagan por las orillas de los ríos de la India. Rápidos y ruidosos, tienen la habilidad especial de volar cortas distancias usando sus pequeñas alas, de modo que pueden volar sobre su presa y, en silencio, atacarla desde arriba con un golpe letal.",
+        "stat": "550 / 450",
+        "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Griffonator",
+        "type": "Fuego / MAX / 015",
+        "image": "FUEGO_ARTES/15/frontal.png",
+        "image2": "FUEGO_ARTES/15/personaje.png",
+        "arImage": "FUEGO_ARTES/15/ar.png",
+        "description": "Los Griffonators son reptiles acechadores que vagan por las orillas de los ríos de la India. Rápidos y ruidosos, tienen la habilidad especial de volar cortas distancias usando sus pequeñas alas, de modo que pueden volar sobre su presa y, en silencio, atacarla desde arriba con un golpe letal.",
+        "stat": "750 / 650",
+        "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Minotaur",
+        "type": "Fuego / PUP / 016",
+        "image": "FUEGO_ARTES/16/frontal.png",
+        "image2": "FUEGO_ARTES/16/personaje.png",
+        "arImage": "FUEGO_ARTES/16/ar.png",
+        "description": "Los Minotauros solían vagar libremente por toda la Tierra… pero son tan peligrosos que un rey de la antigua Grecia tuvo que construir un laberinto para encerrarlos. ¡Ahora has ayudado a uno de ellos a escapar, y este irritado y feroz Invizimal tiene una deuda contigo!",
+        "stat": "300 / 350",
+        "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Minotaur",
+        "type": "Fuego / COLT / 017",
+        "image": "FUEGO_ARTES/17/frontal.png",
+        "image2": "FUEGO_ARTES/17/personaje.png",
+        "arImage": "FUEGO_ARTES/17/ar.png",
+        "description": "Los Minotauros solían vagar libremente por toda la Tierra… pero son tan peligrosos que un rey de la antigua Grecia tuvo que construir un laberinto para encerrarlos. ¡Ahora has ayudado a uno de ellos a escapar, y este irritado y feroz Invizimal tiene una deuda contigo!",
+        "stat": "550 / 500",
+        "habitat": "Fuego"
+    },
+    {
+        "id": 1,
+        "name": "Minotaur",
+        "type": "Fuego / MAX / 018",
+        "image": "FUEGO_ARTES/18/frontal.png",
+        "image2": "FUEGO_ARTES/18/personaje.png",
+        "arImage": "FUEGO_ARTES/18/ar.png",
+        "description": "Los Minotauros solían vagar libremente por toda la Tierra… pero son tan peligrosos que un rey de la antigua Grecia tuvo que construir un laberinto para encerrarlos. ¡Ahora has ayudado a uno de ellos a escapar, y este irritado y feroz Invizimal tiene una deuda contigo!",
+        "stat": "750 / 600",
+        "habitat": "Fuego"
     }
 ]
