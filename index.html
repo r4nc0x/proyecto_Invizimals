@@ -369,6 +369,7 @@ h1 {
         padding: 0 20px;
         margin: 0;
         pointer-events: none;
+        z-index: 1000; /* Añadido para asegurar que esté por encima */
     }
 
     .search-btn, .filter-btn {
@@ -385,10 +386,13 @@ h1 {
         width: calc(100% - 40px);
         max-width: 300px;
         margin-top: 0;
+        pointer-events: none; /* Inicialmente deshabilitado */
+        z-index: 999; /* Asegurar que esté por encima del contenido */
     }
 
     .search-panel.active {
         transform: translateX(0);
+        pointer-events: auto; /* Habilitar cuando esté activo */
     }
 
     .filter-panel {
@@ -401,10 +405,19 @@ h1 {
         width: calc(100% - 40px);
         max-width: 300px;
         margin-top: 0;
+        pointer-events: none; /* Inicialmente deshabilitado */
+        z-index: 999; /* Asegurar que esté por encima del contenido */
     }
 
     .filter-panel.active {
         transform: translateY(0);
+        pointer-events: auto; /* Habilitar cuando esté activo */
+    }
+    
+    /* Añadido: Cuando un panel está activo, deshabilitar las tarjetas detrás */
+    .search-panel.active ~ .invizimals-grid,
+    .filter-panel.active ~ .invizimals-grid {
+        pointer-events: none;
     }
 }
 </style>
@@ -516,13 +529,16 @@ function renderInvizimals(data) {
 
         // Evento click para abrir modal
         card.addEventListener('click', () => {
-            modalImage.src = inv.image2; // segunda imagen
-            modalName.textContent = inv.name;
-            modalType.textContent = inv.type;
-            modalDescription.textContent = inv.description;
-            modalAR.src = inv.arImage;
-            statValue.textContent = inv.stat;
-            cardModal.style.display = 'flex';
+            // Verificar que no haya paneles activos
+            if (!searchPanel.classList.contains('active') && !filterPanel.classList.contains('active')) {
+                modalImage.src = inv.image2; // segunda imagen
+                modalName.textContent = inv.name;
+                modalType.textContent = inv.type;
+                modalDescription.textContent = inv.description;
+                modalAR.src = inv.arImage;
+                statValue.textContent = inv.stat;
+                cardModal.style.display = 'flex';
+            }
         });
     });
 }
@@ -621,6 +637,23 @@ document.addEventListener('click', handleClickOutside);
 // Prevenir que el input cierre el panel
 searchInput.addEventListener('click', (e) => {
     e.stopPropagation();
+});
+
+// Cerrar paneles al tocar fuera en móvil
+document.addEventListener('touchstart', (e) => {
+    if (window.innerWidth <= 768) {
+        const isSearchPanel = searchPanel.contains(e.target);
+        const isSearchBtn = searchBtn.contains(e.target);
+        const isFilterPanel = filterPanel.contains(e.target);
+        const isFilterBtn = filterBtn.contains(e.target);
+        
+        if (!isSearchPanel && !isSearchBtn && searchPanel.classList.contains('active')) {
+            searchPanel.classList.remove('active');
+        }
+        if (!isFilterPanel && !isFilterBtn && filterPanel.classList.contains('active')) {
+            filterPanel.classList.remove('active');
+        }
+    }
 });
 
 closeModal.addEventListener('click', () => cardModal.style.display = 'none');
