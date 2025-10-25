@@ -547,8 +547,9 @@ function renderInvizimals(data) {
 function setupFilters(data) {
     const filterPanel = document.getElementById('filterPanel');
     
-    // Obtener hábitats únicos
-    const habitats = [...new Set(data.map(inv => inv.habitat))];
+    // Obtener hábitats únicos de todos los arrays de hábitats
+    const allHabitats = data.flatMap(inv => inv.habitats || [inv.habitat]);
+    const habitats = [...new Set(allHabitats)];
     
     // Crear opción "Todos"
     const allOption = document.createElement('div');
@@ -584,7 +585,11 @@ function setupFilters(data) {
 function applyFilters() {
     let filteredData = [...invizimalsData];
     if (currentFilter !== 'all') {
-        filteredData = filteredData.filter(inv => inv.habitat === currentFilter);
+        filteredData = filteredData.filter(inv => {
+            // Compatible con el nuevo array habitats y el antiguo habitat individual
+            const invHabitats = inv.habitats || [inv.habitat];
+            return invHabitats.includes(currentFilter);
+        });
     }
     const searchTerm = searchInput.value.toLowerCase();
     if (searchTerm) {
